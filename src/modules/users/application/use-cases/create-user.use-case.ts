@@ -1,6 +1,6 @@
 import { ConflictException, Inject } from '@nestjs/common';
-import { USER_REPOSITORY } from '../../ports/out/user.repository';
-import type { UserRepository } from '../../ports/out/user.repository';
+import { USER_REPOSITORY } from '../../ports/out/user.repository.port';
+import type { UserRepository } from '../../ports/out/user.repository.port';
 import { CreateUserInput } from '../dto/inputs/create-user.input';
 import { User } from '../../domain/entities/user.entity';
 import { randomUUID } from 'crypto';
