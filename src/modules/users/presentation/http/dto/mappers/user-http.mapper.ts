@@ -1,4 +1,4 @@
-import { UserOutput } from 'src/modules/users/application/dto/user.output';
+import { UserOutput } from 'src/modules/users/application/dto/outputs/user.output';
 import { UserResponseDto } from '../responses/user.response';
 
 export const toResponse = (user: UserOutput): UserResponseDto => {

@@ -5,7 +5,7 @@ import { UpdateUserUseCase } from './application/use-cases/update-user.use-case'
 import { GetUserByIdUseCase } from './application/use-cases/get-user-by-id.use-case';
 import { GetAllUsersUseCase } from './application/use-cases/get-all-users.use-case';
 import { DeleteUserUseCase } from './application/use-cases/delete-user.use-case';
-import { USER_REPOSITORY } from './domain/repositories/user.repository';
+import { USER_REPOSITORY } from './ports/out/user.repository';
 import { PrismaUserRepository } from './infrastructure/persistence/prisma-user.repository';
 import { UsersController } from './presentation/http/controllers/users.controller';
 
