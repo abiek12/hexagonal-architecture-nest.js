@@ -6,8 +6,8 @@ import { GetUserByIdUseCase } from './application/use-cases/get-user-by-id.use-c
 import { GetAllUsersUseCase } from './application/use-cases/get-all-users.use-case';
 import { DeleteUserUseCase } from './application/use-cases/delete-user.use-case';
 import { USER_REPOSITORY } from './ports/out/user.repository';
-import { PrismaUserRepository } from './infrastructure/persistence/prisma-user.repository';
-import { UsersController } from './presentation/http/controllers/users.controller';
+import { PrismaUserRepository } from './adapters/out/persistence/prisma/prisma-user.repository.adapter';
+import { UsersController } from './adapters/in/http/controllers/users.controller';
 
 @Module({
   imports: [PrismaModule],

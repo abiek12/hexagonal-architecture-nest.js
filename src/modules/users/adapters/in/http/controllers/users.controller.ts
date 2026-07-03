@@ -6,7 +6,6 @@ import { GetUserByIdUseCase } from 'src/modules/users/application/use-cases/get-
 import { GetAllUsersUseCase } from 'src/modules/users/application/use-cases/get-all-users.use-case';
 import { UpdateUserRequestDto } from '../dto/requests/update-user.request';
 import { UpdateUserUseCase } from 'src/modules/users/application/use-cases/update-user.use-case';
-import { toResponse, toResponseList } from '../mappers/user-http.mapper';
 import {
   ApiBearerAuth,
   ApiBody,
@@ -18,6 +17,7 @@ import {
   ApiTags,
 } from '@nestjs/swagger';
 import { UserResponseDto } from '../dto/responses/user.response';
+import { toResponse, toResponseList } from '../mappers/user-http.mapper';
 
 @ApiTags('Users')
 @ApiBearerAuth('access-token')
